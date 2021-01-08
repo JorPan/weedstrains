@@ -104,7 +104,7 @@ def create
     
 ## Status
     
-We are consistently trying to improve the user's experience with this app.  We value feedback from our community.  On that note, we are have some ideas for imrpoving this app:
+We are consistently trying to improve the user's experience with this app.  We value feedback from our community.  On that note, we have some ideas for improving this app:
 
 🦾 A way to collect feedback from the community about the app user experience <br />
 🦾 A way to collect feedback from the community about whether their experiences with the weed strains align with the information we have <br />
@@ -114,5 +114,5 @@ We are consistently trying to improve the user's experience with this app.  We v
 ## Contact 
 
 [Linkedin](https://www.linkedin.com/in/cassandra-whitty-0a184a1a4/) Cassandra Whitty <br />
-Linkedin Christopher Henderson <br />
+[Linkedin](https://www.linkedin.com/in/christopher-henderson-665796201/) Christopher Henderson <br />
 [Linkedin](https://www.linkedin.com/in/jordan-panasewicz-77a93158/) Jordan Panasewicz
