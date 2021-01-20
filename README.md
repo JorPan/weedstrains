@@ -9,7 +9,7 @@
  💻Ruby <br />
  💻Rails <br />
  💻Javascript <br />
- 💻SQLite3 <br />
+ 💻SQLite3 // postgresql for deployment <br />
  💻Active Record <br />
  
  ## Demo Video
