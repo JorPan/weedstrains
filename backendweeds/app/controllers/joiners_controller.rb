@@ -4,70 +4,6 @@ class JoinersController < ApplicationController
         @joiners = Joiner.all 
         render json: @joiners 
 
-    #     $strainstodisplay = []
-    #     selectedpositiveeffects = []
-    #     selectednegativeeffects = []
-    #     selectedmedicaleffects = []
-    #     selecteffects = []  
-
-    #     params.each do |key, value|
-    #        if (key.include? "effect" && "positive")
-    #             selectedpositiveeffects.push(key.split("-").first)
-    #        elsif (key.include? "effect" && "medical")
-    #         selectedmedicaleffects.push(key.split("-").first)
-    #        elsif (key.include? "effect" && "negative")
-    #         selectednegativeeffects.push(key.split("-").first)
-    #        end
-           
-    #        selecteffects.push(Effect.find_by effect: "{\"effect\"=>\"Relaxed\", \"type\"=>\"positive\"}")
-    #     end
-
-
-    #    selectedstrains = []
-    #     clearspositive = Strain.all.select do |strain|
-    #         selectedpositiveeffects.each do |poseffect|
-    #         break if strain.positive_effects.exclude? poseffect
-    #         end
-    #     end
-
-    #     clearsmedical = clearspositive.select do |strain|
-    #         selectedmedicaleffects.each do |medeffect|
-    #             break if strain.medical_effects.exclude? medeffect
-    #         end
-    #     end
-
-    #         clearsallthree = clearsmedical.select do |strain|
-    #             selectednegativeeffects.each do |negeffect|
-    #                 break if strain.negative_effects.include? negeffect
-    #             end
-    #         end
-
-    #     clearsallthree.each do |strain|
-    #         $strainstodisplay.push(strain)
-    #     end
-
-    #     strainarray = $strainstodisplay.each do |strain|
-    #         Strain.find_by name: strain.name
-    #     end
-
-    #     effectarray = Effect.all.each do |effect|
-    #         effect.id
-    #     end
-
-    #    @joiners = strainarray.each do |strain|
-    #         Joiner.create(
-    #             id: strain.id,
-    #             name: strain.name,
-    #             category: strain.race,
-    #             flavors: strain.flavor,
-    #             positive_effects: strain.positive_effects,
-    #             medical_effects: strain.medical_effects,
-    #             negative_effects: strain.negative_effects
-    #         )
-    #     end
-
-    #     # render json: @joiners 
-    #     redirect_to "http://localhost:3001/suggestions.html" 
     end
 
     def show 
@@ -83,7 +19,7 @@ class JoinersController < ApplicationController
         selectedpositiveeffects = []
         selectednegativeeffects = []
         selectedmedicaleffects = []
-        selecteffects = []  
+        # selecteffects = []  
 
         params.each do |key, value|
            if (key.include? "effect" && "positive")
@@ -94,7 +30,7 @@ class JoinersController < ApplicationController
                 selectednegativeeffects.push(key.split("-").first)
            end
            
-           selecteffects.push(Effect.find_by effect: "{\"effect\"=>\"Relaxed\", \"type\"=>\"positive\"}")
+        #    selecteffects.push(Effect.find_by effect: "{\"effect\"=>\"Relaxed\", \"type\"=>\"positive\"}")
         end
 
 
@@ -142,10 +78,8 @@ class JoinersController < ApplicationController
         end
 
 
-        # render json: @joiners 
         redirect_to "http://localhost:3001/suggestions.html" 
-        
-        # byebug
+
     end
 
 

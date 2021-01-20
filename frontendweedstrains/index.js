@@ -112,10 +112,9 @@ const params = new URLSearchParams(window.location.search);
 let mySearchParams = params.get("strains");
 
 let effectForm = document.querySelector("#effects-form");
+effectForm.addEventListener("submit", getCheckedOptions);
 
-effectForm.addEventListener("submit", callbackFunction);
-
-function callbackFunction(event) {
+function getCheckedOptions(event) {
   checkedOptions = document.querySelectorAll("input[type=checkbox]:checked");
   getStrings(checkedOptions);
 }
