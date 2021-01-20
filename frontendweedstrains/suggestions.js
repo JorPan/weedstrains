@@ -1,5 +1,3 @@
-console.log("hi");
-
 fetch("http://localhost:3000/joiners")
   .then((response) => response.json())
   .then((strains) => {
@@ -13,7 +11,6 @@ fetch("http://localhost:3000/joiners")
       let positive_effects = document.createElement("p");
       let medical_effects = document.createElement("p");
       let negative_effects = document.createElement("p");
-      // let strainCard = document.querySelector(".strain-card")
       cardHead.classList.add("card-head");
 
       card.classList.add("strain-card");
