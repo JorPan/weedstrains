@@ -1,4 +1,4 @@
-2class EffectsController < ApplicationController
+class EffectsController < ApplicationController
 
     def index
         @effects = Effect.all 

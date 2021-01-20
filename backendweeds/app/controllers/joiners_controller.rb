@@ -19,7 +19,7 @@ class JoinersController < ApplicationController
         selectedpositiveeffects = []
         selectednegativeeffects = []
         selectedmedicaleffects = []
-        # selecteffects = []  
+        selecteffects = []  
 
         params.each do |key, value|
            if (key.include? "effect" && "positive")
@@ -30,7 +30,7 @@ class JoinersController < ApplicationController
                 selectednegativeeffects.push(key.split("-").first)
            end
            
-        #    selecteffects.push(Effect.find_by effect: "{\"effect\"=>\"Relaxed\", \"type\"=>\"positive\"}")
+           selecteffects.push(Effect.find_by effect: "{\"effect\"=>\"Relaxed\", \"type\"=>\"positive\"}")
         end
 
 
